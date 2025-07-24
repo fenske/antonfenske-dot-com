@@ -73,7 +73,7 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              These days I work as a CTO at Alva Labs, a company that builds a platform for hiring software engineers.
+              These days I work as a CTO at Alva Labs, a company that builds the ultimate hiring success system.
             </p>
             <p>
               Before that I worked on DevSkills, a platform for hiring software engineers which was acquired by Alva Labs.
