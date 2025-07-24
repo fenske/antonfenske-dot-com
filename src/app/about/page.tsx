@@ -73,11 +73,17 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              These days I work as a CTO at Alva Labs, a company that builds the ultimate hiring success system.
+              I’m a software engineer passionate about exploring how technology can positively impact people's lives.
             </p>
             <p>
-              Before that I worked on DevSkills, a platform for hiring software engineers which was acquired by Alva Labs.
+              Currently, I work as CTO at Alva Labs, where we’re building an AI-native hiring success platform designed to improve how companies identify and hire talent.
             </p>
+            <p>
+              Previously, I founded and bootstrapped DevSkills, a real-world coding test platform aimed at bringing common sense back into developer hiring processes. DevSkills was eventually acquired by Alva Labs, becoming an integral part of their  hiring solution suite.
+             </p>
+            <p>
+              Earlier in my career, I had spent several dynamic years at Klarna, a leading Swedish fintech company.
+             </p>
           </div>
         </div>
         <div className="lg:pl-20">
