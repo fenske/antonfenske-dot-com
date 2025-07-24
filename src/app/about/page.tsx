@@ -73,7 +73,7 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’m a software engineer passionate about exploring how technology can positively impact people's lives.
+              I’m a software engineer passionate about exploring how technology can positively impact people’s lives.
             </p>
             <p>
               Currently, I work as CTO at Alva Labs, where we’re building an AI-native hiring success platform designed to improve how companies identify and hire talent.
