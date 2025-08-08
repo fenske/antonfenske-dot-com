@@ -58,3 +58,34 @@ This is a **Spotlight** template from Tailwind Plus - a personal portfolio/blog 
 - `src/app/layout.tsx` - Root layout with metadata and providers
 - `next.config.mjs` - MDX configuration and file tracing
 - `mdx-components.tsx` - Global MDX component overrides
+
+## Blog Post Structure
+
+Blog posts follow a specific structure:
+- Location: `src/app/blog/[slug]/page.mdx`
+- Each post must export an `article` object containing metadata:
+  ```typescript
+  export const article = {
+    title: 'Post Title',
+    description: 'Post description',
+    author: 'Author Name',
+    date: '2024-01-01'
+  }
+  ```
+- Content is written in MDX format with full React component support
+- Images should be placed in `public/images/blog/[slug]/` directory
+
+## RSS Feed Generation
+
+The RSS feed is automatically generated at `/feed.xml` by:
+- `src/app/feed.xml/route.ts` - Uses the `feed` library and `cheerio` for HTML parsing
+- Dynamically discovers all blog posts using webpack's `require.context`
+- Fetches rendered HTML for each post and extracts content
+- Requires `NEXT_PUBLIC_SITE_URL` environment variable
+
+## Component Architecture
+
+- **Reusable UI**: Components in `src/components/` are designed for reuse
+- **Composition**: Layout components compose together (Layout > Header/Footer, PostLayout > Container > Prose)
+- **Styling**: All components use Tailwind CSS classes with dark mode variants
+- **TypeScript**: Full TypeScript support with proper type definitions
